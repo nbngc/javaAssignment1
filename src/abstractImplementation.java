@@ -30,7 +30,7 @@ class Clerk extends Employee{
         System.out.println("Clerk name: "+name);
     }
 }
- public class abstractImplementation{
+ public class AbstractImplementation{
     public static void main(String[] args) {
         Manager manager = new Manager();
         manager.display("xyz");

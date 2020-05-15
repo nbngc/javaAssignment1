@@ -11,12 +11,12 @@ class PersonInheritance {
         this.name = name;
         this.bonusSalary = bonusSalary;
         System.out.println("Name: "+name);
-        System.out.println("Total Salary: "+(baseSalary+this.bonusSalary));
+//         System.out.println("Total Salary: "+(baseSalary+this.bonusSalary));
     }
-//    public double calculateSalary(double bonusSalary){
-//        return (baseSalary + bonusSalary);
-//
-//    }
+   public double calculateSalary(){
+       return (baseSalary + bonusSalary);
+
+   }
 
 }
 class Politician extends PersonInheritance{
@@ -39,12 +39,11 @@ class Sportsman extends PersonInheritance{
 }
 class Main {
     public static void main(String[] args) {
-//        Politician politician1 = new Politician();
         Politician politician = new Politician("xyz",20000);
-//        System.out.println("Total Salary: "+politician.calculateSalary(10000));
-//        Sportsman sportsman1 = new Sportsman();
+        System.out.println("Total Salary: "+politician.calculateSalary());
+        
         Sportsman sportsman = new Sportsman("uuu",10000);
-//        System.out.println("Total Salary: "+sportsman.calculateSalary(50000));
+        System.out.println("Total Salary: "+sportsman.calculateSalary());
 
     }
 }
